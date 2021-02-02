@@ -21,7 +21,8 @@ end)
 
 tool.Activated:Connect(function(add)
 	add = 1
-	if clicks==0 then
+	if clicks==0 and canClick==true then
+		canClick = false
 		clicks+=add
 		print(clicks)
 	end
